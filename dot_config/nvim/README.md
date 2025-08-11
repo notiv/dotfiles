@@ -1,4 +1,4 @@
-# Neovim from Scratch
+# Old Configuration based on the Neovim from Scratch from [MrJakob](https://youtube.com/c/MrJakob).
 
 This neovim configuration is being build up incrementally from scratch on a video series on my [YouTube channel: MrJakob](https://youtube.com/c/MrJakob).
 
