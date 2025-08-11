@@ -22,9 +22,9 @@ If you are interested my currently used personal configuration and setup, you ca
 - [X] which-key
 - [X] fzflua
 - [X] project.nvim
-- [ ] LSP
-- [ ] Mason
-- [ ] conform.nvim
-- [ ] blink-cmp
-- [ ] snacks.indent
+- [X] LSP
+- [X] Mason
+- [X] conform.nvim
+- [X] blink-cmp
+- [X] snacks.indent
 
