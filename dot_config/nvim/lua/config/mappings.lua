@@ -16,6 +16,7 @@ map("v", ">", ">gv")
 -- ESC clears search highlights
 map({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Clear hlsearch and ESC" })
 
+
 -- Window management (<leader>w...)
 -- window
 map("n", "<leader>ws", "<cmd>split<cr>", { desc = "Horizontal split" })
@@ -70,6 +71,12 @@ vim.keymap.set("n", "<CR>", function()
     vim.cmd("normal! zz") -- center the cursor line on screen
   end
 end, { desc = "Toggle fold" })
+
+map("n", "-", "<cmd>Oil --float<CR>", { desc = "Open parent directory in Oil" })
+
+map("n", "gl", function()
+  vim.diagnostics.open_float()
+end, { desc = "Open diagnostics in float" })
 
 map("n", "<leader>uI", function()
   vim.treesitter.inspect_tree()
