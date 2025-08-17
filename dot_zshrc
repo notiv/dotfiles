@@ -26,6 +26,7 @@ bindkey '^[[B' history-search-forward
 
 bindkey -v
 
+bindkey -M vicmd '^[[3~' delete-char
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 

@@ -54,6 +54,7 @@ vim.opt.smartindent    = true -- Auto-indents code structures
 vim.opt.splitbelow     = true -- Force horizontal splits to appear below the current window
 vim.opt.splitright     = true -- Force vertical splits to appear to the right of the current window
 vim.opt.tabstop        = 2 -- Tab characters are displayed as 2 spaces
+vim.opt.softtabstop    = 2
 vim.opt.timeoutlen     = 300 -- Time to wait for a mapped sequence to complete
 vim.opt.ttimeoutlen    = 0 -- Immediate key code timeout
 vim.opt.updatetime     = 250 -- Faster CursorHold events (good for LSP).
