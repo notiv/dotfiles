@@ -8,6 +8,8 @@ fi
 export PATH=".:/usr/local/bin:${PATH}"
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
+export EDITOR='nvim'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -105,4 +107,11 @@ _fzf_comprun() {
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
 
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
+
+eval "$(direnv hook zsh)"
 
