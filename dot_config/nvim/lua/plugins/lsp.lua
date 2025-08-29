@@ -205,6 +205,38 @@ return {
 		local servers = {
 			bashls = {},
 			marksman = {},
+			texlab = { -- LaTeX LSP server
+				settings = {
+					texlab = {
+						auxDirectory = "build",
+						bibtexFormatter = "texlab",
+						build = {
+							args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "%f" },
+							executable = "latexmk",
+							forwardSearchAfter = false,
+							onSave = false,
+						},
+						chktex = {
+							onEdit = false,
+							onOpenAndSave = false,
+						},
+						diagnosticsDelay = 300,
+						formatterLineLength = 80,
+						forwardSearch = {
+							-- macOS with Skim
+							executable = "skim",
+							args = { "-g", "%l", "%p" },
+							-- Linux with Zathura
+							-- executable = "zathura",
+							-- args = { "--synctex-forward", "%l:1:%f", "%p" },
+						},
+						latexFormatter = "latexindent",
+						latexindent = {
+							modifyLineBreaks = false,
+						},
+					},
+				},
+			},
 			-- clangd = {},
 			-- gopls = {},
 			-- pyright = {},
@@ -250,6 +282,8 @@ return {
 		local ensure_installed = vim.tbl_keys(servers or {})
 		vim.list_extend(ensure_installed, {
 			"stylua", -- Used to format Lua code
+			"texlab", -- LaTeX LSP server
+			"latexindent", -- LaTeX formatter
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
