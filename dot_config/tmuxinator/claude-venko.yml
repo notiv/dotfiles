@@ -1,0 +1,19 @@
+# /Users/viton/.config/tmuxinator/claude-venko.yml
+
+name: claude-venko
+root: /Users/viton/Projects/rivero/venko
+
+# Specifies (by name or index) which window will be selected on project startup
+startup_window: main
+
+# Enable pane titles for better organization
+enable_pane_titles: true
+
+windows:
+  - main:
+      layout: even-horizontal
+      panes:
+        - nvim-editor:
+          - nvim
+        - claude-terminal:
+          - claude
