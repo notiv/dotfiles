@@ -121,3 +121,9 @@ fi
 # direnv
 eval "$(direnv hook zsh)"
 
+# ----- Misc aliases -----
+mkcd () {
+  \mkdir -p "$1"
+  cd "$1"
+}
+
