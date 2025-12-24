@@ -24,6 +24,14 @@ return {
                         ["ic"] = { query = "@class.inner", desc = "Select inner part of a class region" },
                         -- You can also use captures from other query groups like `locals.scm`
                         ["as"] = { query = "@local.scope", query_group = "locals", desc = "Select language scope" },
+                        
+                        -- LaTeX-specific text objects
+                        ["ae"] = { query = "@environment.outer", desc = "Select around environment" },
+                        ["ie"] = { query = "@environment.inner", desc = "Select inside environment" },
+                        ["aS"] = { query = "@section.outer", desc = "Select around section" },
+                        ["iS"] = { query = "@section.inner", desc = "Select inside section" },
+                        ["aT"] = { query = "@table.outer", desc = "Select around table" },
+                        ["iT"] = { query = "@table.inner", desc = "Select inside table" },
                     },
                     -- You can choose the select mode (default is charwise 'v')
                     --

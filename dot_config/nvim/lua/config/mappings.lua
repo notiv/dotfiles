@@ -75,7 +75,7 @@ end, { desc = "Toggle fold" })
 map("n", "-", "<cmd>Oil --float<CR>", { desc = "Open parent directory in Oil" })
 
 map("n", "gl", function()
-  vim.diagnostics.open_float()
+  vim.diagnostic.open_float()
 end, { desc = "Open diagnostics in float" })
 
 map("n", "<leader>uI", function()

@@ -22,6 +22,7 @@ return {
 					["@markup.list.markdown"] = { link = "Function" }, -- + list
 					["@markup.quote.markdown"] = { link = "Error" }, -- > blockcode
 					["@markup.list.checked.markdown"] = { link = "WarningMsg" }, -- - [X] checked list item
+					Visual = { bg = "#345e7d", fg = "none" }, -- Custom visual selection color
 				}
 			end,
 		})

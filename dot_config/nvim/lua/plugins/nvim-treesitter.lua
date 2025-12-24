@@ -6,7 +6,8 @@ return {
 
         configs.setup({
             ensure_installed = {
-                "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", "python", "rust", "markdown"
+                "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", "python", "rust", "markdown",
+                "latex", "bibtex"
             },
             auto_install = true,
             sync_install = false,
